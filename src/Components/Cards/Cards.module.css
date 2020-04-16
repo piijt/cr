@@ -3,6 +3,10 @@
   color: #f1f1f1;
 }
 
+.divider {
+  margin: 10px 0;
+}
+
 .card {
   margin: 0 2% !important;
   background-color: #323a46 !important;
