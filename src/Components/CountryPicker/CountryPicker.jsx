@@ -13,6 +13,7 @@ const CountryPicker = ({ handleCountryChange }) => {
     fetchAPI();
   }, [setFetchedCountries]);
 
+
   return(
     <div className={styles.bgColor}>
     <FormControl className={styles.formControl}>
