@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(250,250,250);
+  background-color: #282e38;
 }
 
 .container {
@@ -10,8 +10,11 @@ body {
 }
 
 .image {
-  width: 370px;
-  margin-top: 50px;
+  width: 10vw;
+  margin-top: 10px;
+  margin-left: 10px;
+  top:0;
+  left:0;
 }
 
 @media (max-wdith: 770px) {
@@ -19,6 +22,6 @@ body {
     margin: 0 10%;
   }
   .image {
-    width: 100%;
+    width: 10vw;
   }
 }

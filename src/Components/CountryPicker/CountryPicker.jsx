@@ -14,12 +14,14 @@ const CountryPicker = ({ handleCountryChange }) => {
   }, [setFetchedCountries]);
 
   return(
+    <div className={styles.bgColor}>
     <FormControl className={styles.formControl}>
-      <NativeSelect defaultValue="" onChange={(e) => handleCountryChange(e.target.value)}>
+      <NativeSelect style={{color: "#f1f1f1"}} className={styles.formControl} defaultValue="" onChange={(e) => handleCountryChange(e.target.value)}>
         <option value="">Global</option>
-        {fetchedCountries.map((country, i) => <option key={i} value={country}>{country}</option>)}
+        {fetchedCountries.map((country, i) => <option style={{color: "#333"}} key={i} value={country}>{country}</option>)}
       </NativeSelect>
     </FormControl>
+  </div>
   )
 }
 

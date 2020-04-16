@@ -2,11 +2,14 @@
   display: flex;
   justify-content: center;
   width: 85%;
+  background-color: #323a46 !important;
+  color: #f1f1f1;
 }
 
-.firnControl {
+.formControl {
   width: 30%;
   margin-bottom: 30px !important;
+  color: #f1f1f1;
 }
 
 @media (max-wdith: 770px) {

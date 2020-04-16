@@ -1,0 +1,11 @@
+.formControl {
+  margin-bottom: 15px !important;
+  color: #f1f1f1;
+}
+
+.bgColor {
+  background-color: #323a46;
+  margin-bottom: 15px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+}
