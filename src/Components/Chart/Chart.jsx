@@ -66,17 +66,6 @@ const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
     confirmed
       ? (
         <Bar
-          options={{
-            legend: {
-              title: {
-                  display: true,
-                  fontColor: '#f1f1f1',
-              },
-              labels: {
-                  fontColor: '#f1f1f1',
-              },
-            },
-          }}
           data={{
             labels: ['Infected', 'Recovered', 'Deaths'],
             datasets: [{

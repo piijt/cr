@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { Cards, Chart, CountryPicker } from './Components';
-import { Card, CardContent, Typography, Grid } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import styles from './App.module.css';
 import { fetchData } from './api';
-import logo from './images/Asset 1.png';
+import logo from './images/Asset 3.png';
 
 
 class App extends React.Component {
