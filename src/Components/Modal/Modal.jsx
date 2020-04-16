@@ -8,9 +8,9 @@ import Fade from '@material-ui/core/Fade';
 import { Card, CardContent, Typography, Grid } from '@material-ui/core';
 
 const Modal = () => {
-  return {
+  return (
     <div className={styles.infolink}></div>
-  }
+  )
 }
 
 export default Modal;

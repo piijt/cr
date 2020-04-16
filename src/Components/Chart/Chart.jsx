@@ -18,6 +18,30 @@ const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
     dailyData.length
       ? (
         <Line
+        options={{
+          legend: {
+               labels: {
+                    fontColor: '#f1f1f1'
+                   }
+                },
+          title: {
+              display: true,
+              fontColor: '#f1f1f1',
+          },
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero:true,
+                      fontColor: '#f1f1f1'
+                  },
+              }],
+            xAxes: [{
+                  ticks: {
+                      fontColor: '#f1f1f1'
+                  },
+              }]
+          }
+        }}
         data={{
           labels: dailyData.map(({ date }) => date),
           datasets:[{
@@ -42,6 +66,17 @@ const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
     confirmed
       ? (
         <Bar
+          options={{
+            legend: {
+              title: {
+                  display: true,
+                  fontColor: '#f1f1f1',
+              },
+              labels: {
+                  fontColor: '#f1f1f1',
+              },
+            },
+          }}
           data={{
             labels: ['Infected', 'Recovered', 'Deaths'],
             datasets: [{
